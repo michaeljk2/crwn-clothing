@@ -1,4 +1,5 @@
 import React from 'react'
+import PreviewCollection from '../../components/collection-preview/preview-collection.component'
 import SHOP_DATA from './shop.data'
 
 class ShopPage extends React.Component {
@@ -11,7 +12,17 @@ class ShopPage extends React.Component {
     }
 
     render () {
-        return <div>SHOP PAGE</div>
+        // Hier wird lediglich das erste Child aus dem JSON herausgenommen
+        // nämlich: das erste Array Objekt, egal wie man es nennt!
+        const { collections } = this.state
+        return (
+            collections.map(({id, ...otherCollectionProps}) => (
+                <div key={id} >
+                    <h1>SHOP PAGE</h1>
+                    <PreviewCollection {...otherCollectionProps}/>
+                </div>
+            ))
+        )
     }
 }
 
