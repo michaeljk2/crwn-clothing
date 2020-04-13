@@ -1,5 +1,12 @@
 body {
   font-family: 'Open Sans';
   font-weight: 400;
+}
+
+.mainBody {
   padding: 20px 80px;
+}
+
+a {
+  text-decoration: none;
 }

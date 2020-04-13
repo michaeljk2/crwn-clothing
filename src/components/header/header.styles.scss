@@ -1,0 +1,50 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  animation: gradient 5s alternate infinite both;
+
+  .logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 70px;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+    }
+  }
+
+  a {
+      animation: colorchange 5s alternate infinite both;
+  }
+}
+
+@keyframes gradient {
+  from {
+    background: burlywood;
+  }
+  to {
+    background: lightseagreen;
+  }
+}
+@keyframes colorchange {
+    from {
+        color: black;
+    }
+    to {
+        color: white
+    }
+}
