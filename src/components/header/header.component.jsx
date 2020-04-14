@@ -17,6 +17,9 @@ const Header = (props) => (
         <Link className='option' to='/contact'>
             contact
         </Link>
+        <Link className='option' to='/signin'>
+            signin
+        </Link>
     </div>
   </div>
 )
