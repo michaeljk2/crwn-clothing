@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
-  animation: gradient 5s alternate infinite both;
+  animation: gradient 12s alternate infinite both;
 
   .logo-container {
     display: flex;
@@ -24,27 +24,28 @@
 
     .option {
       padding: 10px 15px;
+      cursor: pointer;
     }
   }
-
   a {
-      animation: colorchange 5s alternate infinite both;
+    color: gray
+  }
+  * {
+      mix-blend-mode: color-dodge;
   }
 }
 
 @keyframes gradient {
-  from {
-    background: burlywood;
+  0% {
+    background: #4e5d8d;
+    box-shadow: 0 15px 25px -5px #4e5d8d60;
   }
-  to {
-    background: lightseagreen;
+  50% {
+    background: #77bb9b;
+    box-shadow: 0 15px 25px -5px #77bb9b60;
   }
-}
-@keyframes colorchange {
-    from {
-        color: black;
-    }
-    to {
-        color: white
-    }
+  100% {
+    background: #28ada7;
+    box-shadow: 0 15px 25px -5px #28ada760;
+  }
 }
